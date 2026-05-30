@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Rifanul Faiz — Video Editor & Motion Designer</title>
+<title>Rifanul — Video Editor & Motion Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -490,7 +490,7 @@
 <div class="cursor" id="cursor"></div>
 
 <nav>
-  <a href="#" class="nav-logo">Faiz</a>
+  <a href="#" class="nav-logo">Rifanul</a>
   <ul class="nav-links">
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
@@ -503,18 +503,22 @@
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
   <div class="hero-content">
-    <div class="hero-tag">Video Editor & Motion Graphics Designer</div>
+    <div class="hero-tag">Video Editor & Motion Designer</div>
     <h1 class="hero-title">
       Frames that<br><em>move</em> people.
     </h1>
     <div class="hero-bottom">
       <p class="hero-desc">
-        Short-form, long-form, and kinetic typography — crafted to maximize audience retention metrics and conversion.
+        Short-form, long-form, motion graphics — crafted for creators who want content that actually converts.
       </p>
       <div class="hero-stats">
         <div>
           <span class="stat-num">4+</span>
           <span class="stat-label">Years editing</span>
+        </div>
+        <div>
+          <span class="stat-num">1M+</span>
+          <span class="stat-label">Views this year</span>
         </div>
       </div>
     </div>
@@ -569,7 +573,7 @@
         </a>
         <div class="work-info">
           <div class="work-title">Simple Motion Graphics</div>
-          <div class="work-meta">After Effects · Motion Design · Expressions</div>
+          <div class="work-meta">After Effects · Motion Design</div>
         </div>
       </div>
     </div>
@@ -629,17 +633,18 @@
       Editing with<br><em>intent</em>, not<br>just instinct.
     </h2>
     <p class="about-text">
-      I'm Muhammad Rifanul Faiz — an 18-year-old freelance video editor and motion graphics designer based in Pontianak, Indonesia. I craft content for international creators and agencies, specializing in short-form that hooks, long-form that retains, and motion graphics that actually say something.
+      I'm Rifanul — a freelance video editor and motion designer based in Indonesia, with 4+ years crafting content for international creators and brands. I specialize in short-form that hooks, long-form that retains, and motion graphics that actually say something.
     </p>
     <p class="about-text">
-      My workflow is built around precision and engagement. I integrate precise audio transcriptions (US, UK, and Australian conventions) and utilize advanced After Effects techniques for complex kinetic typography.
+      Niches I've worked across: finance, crypto, coaching, men's health. Platforms: YouTube, TikTok, Instagram, Shorts.
     </p>
     <div class="tools-list">
       <span class="tool-tag">Premiere Pro</span>
       <span class="tool-tag">After Effects</span>
       <span class="tool-tag">CapCut</span>
-      <span class="tool-tag">Attention Audits</span>
-      <span class="tool-tag">AI-Generated Assets</span>
+      <span class="tool-tag">ElevenLabs</span>
+      <span class="tool-tag">Adobe Podcast</span>
+      <span class="tool-tag">AI-integrated workflow</span>
     </div>
   </div>
   <div class="about-right reveal">
@@ -647,22 +652,22 @@
     <div class="service-item">
       <div class="service-num">01</div>
       <div class="service-name">Short-Form Editing</div>
-      <div class="service-desc">TikTok, Reels, Shorts — fast pacing, strong hooks, optimized for maximum retention metrics.</div>
+      <div class="service-desc">TikTok, Reels, Shorts — fast pacing, strong hooks, optimized for retention and shares.</div>
     </div>
     <div class="service-item">
       <div class="service-num">02</div>
       <div class="service-name">Long-Form YouTube</div>
-      <div class="service-desc">Story-driven edits structured for watch time, utilizing precise pacing and attention audits.</div>
+      <div class="service-desc">Story-driven edits for education, finance, and coaching channels. Structured for watch time.</div>
     </div>
     <div class="service-item">
       <div class="service-num">03</div>
       <div class="service-name">Motion Graphics</div>
-      <div class="service-desc">Advanced UI-style animations, kinetic typography with precise formatting, and custom branded motion in After Effects.</div>
+      <div class="service-desc">UI-style animations, explainer sequences, branded motion — all in After Effects.</div>
     </div>
     <div class="service-item">
       <div class="service-num">04</div>
       <div class="service-name">AI-Integrated Workflow</div>
-      <div class="service-desc">Faster turnaround with AI-generated visual assets, smart automation, and precise audio transcription tools.</div>
+      <div class="service-desc">Faster turnaround with AI audio enhancement, voice synthesis, and smart automation.</div>
     </div>
   </div>
 </section>
@@ -674,14 +679,15 @@
     Let's make<br>something <em>worth</em><br>watching.
   </h2>
   <div>
-    <a href="mailto:email-lo-disini@gmail.com" target="_blank" class="cta-btn primary">Get in touch</a>
+    <a href="https://wa.me/6289540303712" target="_blank" class="cta-btn primary">Get in touch</a>
+    <a href="https://www.instagram.com/rehanresing_/" target="_blank" class="cta-btn">Instagram</a>
   </div>
 </section>
 
 <footer>
   <span class="footer-logo">Rifanul</span>
-  <span>© 2026 Muhammad Rifanul Faiz. All rights reserved.</span>
-  <span>Pontianak, Indonesia</span>
+  <span>© 2025 Rifanul. All rights reserved.</span>
+  <span>Indonesia</span>
 </footer>
 
 <script>
