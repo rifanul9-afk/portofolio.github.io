@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -300,6 +300,25 @@
     transform: translate(-50%, -50%) scale(1);
   }
 
+  /* Client badge */
+  .client-badge {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 100px;
+    padding: 4px 12px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .work-item:hover .client-badge { opacity: 1; }
+
   /* About */
   #about {
     background: var(--off);
@@ -517,8 +536,8 @@
           <span class="stat-label">Years editing</span>
         </div>
         <div>
-          <span class="stat-num">1M+</span>
-          <span class="stat-label">Views this year</span>
+          <span class="stat-num">2M+</span>
+          <span class="stat-label">Views in the last 30 days</span>
         </div>
       </div>
     </div>
@@ -534,7 +553,7 @@
   <div class="section-label reveal">Selected Work</div>
   <div class="work-grid">
 
-    <!-- Long-form -->
+    <!-- Long-form — Ben Ewert -->
     <div class="work-item full reveal">
       <div class="work-thumb">
         <iframe
@@ -556,51 +575,75 @@
       </div>
     </div>
 
-    <!-- Motion Graphics -->
+    <!-- Raymond Chin IG #1 -->
     <div class="work-item reveal">
       <div class="work-thumb">
         <iframe
-          src="https://drive.google.com/file/d/1p5lNWFtpay8tvRL2oEhlrZB1QR2gSB2e/preview"
+          src="https://drive.google.com/file/d/1jhg6nmFgoXue-vnKMaKwV_Jgns80uNUy/preview"
           allow="autoplay"
           allowfullscreen>
         </iframe>
       </div>
       <div class="work-overlay">
-        <a class="play-btn" href="https://drive.google.com/file/d/1p5lNWFtpay8tvRL2oEhlrZB1QR2gSB2e/view" target="_blank">
+        <span class="client-badge">@raymondchins</span>
+        <a class="play-btn" href="https://drive.google.com/file/d/1jhg6nmFgoXue-vnKMaKwV_Jgns80uNUy/view" target="_blank">
           <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
             <path d="M1 1l12 7-12 7V1z" fill="#111"/>
           </svg>
         </a>
         <div class="work-info">
-          <div class="work-title">Simple Motion Graphics</div>
-          <div class="work-meta">After Effects · Motion Design</div>
+          <div class="work-title">Short-Form — Raymond Chin</div>
+          <div class="work-meta">Instagram Reels · Hook-first · 221K+ Views</div>
         </div>
       </div>
     </div>
 
-    <!-- Explainer -->
+    <!-- Raymond Chin IG #2 -->
     <div class="work-item reveal">
       <div class="work-thumb">
         <iframe
-          src="https://drive.google.com/file/d/17bSlZd8su72vA_40M385Vsp15Iwj_kEh/preview"
+          src="https://drive.google.com/file/d/1BRUsVYok2yylw_ZyGeVrmVy7fP7Eq3Lv/preview"
           allow="autoplay"
           allowfullscreen>
         </iframe>
       </div>
       <div class="work-overlay">
-        <a class="play-btn" href="https://drive.google.com/file/d/17bSlZd8su72vA_40M385Vsp15Iwj_kEh/view" target="_blank">
+        <span class="client-badge">@raymondchins</span>
+        <a class="play-btn" href="https://drive.google.com/file/d/1BRUsVYok2yylw_ZyGeVrmVy7fP7Eq3Lv/view" target="_blank">
           <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
             <path d="M1 1l12 7-12 7V1z" fill="#111"/>
           </svg>
         </a>
         <div class="work-info">
-          <div class="work-title">Explainer Video</div>
-          <div class="work-meta">Educational · Script-to-screen</div>
+          <div class="work-title">Short-Form — Raymond Chin</div>
+          <div class="work-meta">Instagram Reels · Hook-first · 565K+ Views</div>
         </div>
       </div>
     </div>
 
-    <!-- Short-form -->
+    <!-- Short-form + 4th video full width -->
+    <div class="work-item full reveal">
+      <div class="work-thumb">
+        <iframe
+          src="https://drive.google.com/file/d/1_4Zuxq12QdvjhsBGWY6gKTYUd6fv6cLk/preview"
+          allow="autoplay"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="work-overlay">
+        <a class="play-btn" href="https://drive.google.com/file/d/1_4Zuxq12QdvjhsBGWY6gKTYUd6fv6cLk/view" target="_blank">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M1 1l12 7-12 7V1z" fill="#111"/>
+          </svg>
+        </a>
+        <div class="work-info">
+          <div class="work-title">Short-Form</div>
+          <div class="work-meta">TikTok · Reels · Shorts · Hook-first pacing</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Short-form original -->
     <div class="work-item reveal" style="grid-column: 1 / -1; aspect-ratio: 16/7;">
       <div class="work-thumb">
         <iframe
