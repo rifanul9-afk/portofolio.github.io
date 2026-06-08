@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -390,6 +389,149 @@
     font-weight: 300;
   }
 
+  /* Motion section */
+  #motion {
+    background: var(--ink);
+    padding: 6rem 3rem;
+  }
+
+  #motion .section-label {
+    color: rgba(255,255,255,0.35);
+  }
+
+  #motion .section-label::after {
+    background: rgba(255,255,255,0.1);
+  }
+
+  .motion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  .motion-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .motion-title em {
+    font-style: italic;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .motion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .motion-item {
+    position: relative;
+    overflow: hidden;
+    background: #1a1a19;
+    aspect-ratio: 16/10;
+    cursor: none;
+  }
+
+  .motion-item.full { grid-column: 1 / -1; aspect-ratio: 16/7; }
+
+  .motion-thumb {
+    width: 100%; height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .motion-thumb iframe {
+    width: 100%; height: 100%;
+    border: none;
+    pointer-events: none;
+    transform: scale(1.02);
+    transition: transform 0.6s ease;
+  }
+
+  .motion-item:hover .motion-thumb iframe { transform: scale(1.06); }
+
+  .motion-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s ease;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 1.5rem;
+  }
+
+  .motion-item:hover .motion-overlay { background: rgba(0,0,0,0.55); }
+
+  .motion-info {
+    transform: translateY(12px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .motion-item:hover .motion-info { transform: translateY(0); opacity: 1; }
+
+  .motion-work-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 4px;
+  }
+
+  .motion-meta {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .motion-play-btn {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 56px; height: 56px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .motion-item:hover .motion-play-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .motion-client-badge {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 100px;
+    padding: 4px 12px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .motion-item:hover .motion-client-badge { opacity: 1; }
+
+  @media (max-width: 768px) {
+    .motion-grid { grid-template-columns: 1fr; }
+    .motion-item.full { grid-column: 1; }
+    #motion { padding: 4rem 1.5rem; }
+    .motion-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+
   /* CTA */
   #contact {
     background: var(--ink);
@@ -511,7 +653,8 @@
 <nav>
   <a href="#" class="nav-logo">Rifanul</a>
   <ul class="nav-links">
-    <li><a href="#work">Work</a></li>
+    <li><a href="#work">Editing</a></li>
+    <li><a href="#motion">Motion</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -550,7 +693,7 @@
 
 <!-- Work -->
 <section id="work">
-  <div class="section-label reveal">Selected Work</div>
+  <div class="section-label reveal">Selected Editing Work</div>
   <div class="work-grid">
 
     <!-- Long-form — Ben Ewert -->
@@ -668,6 +811,109 @@
   </div>
 </section>
 
+<!-- Motion Graphics -->
+<section id="motion">
+  <div class="motion-header reveal">
+    <div>
+      <div class="section-label">Motion Graphics</div>
+      <h2 class="motion-title">Moving things<br><em>from scratch.</em></h2>
+    </div>
+  </div>
+  <div class="motion-grid">
+
+    <!-- First ever motion — Dec 2024 -->
+    <div class="motion-item full reveal">
+      <div class="motion-thumb">
+        <iframe
+          src="https://drive.google.com/file/d/1Ms7wtbLRqU8bGDvX4l5e5IFWv1H3AF7c/preview"
+          allow="autoplay"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="motion-overlay">
+        <a class="motion-play-btn" href="https://drive.google.com/file/d/1Ms7wtbLRqU8bGDvX4l5e5IFWv1H3AF7c/view" target="_blank">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M1 1l12 7-12 7V1z" fill="white"/>
+          </svg>
+        </a>
+        <div class="motion-info">
+          <div class="motion-work-title">First Motion Project</div>
+          <div class="motion-meta">After Effects · December 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OKX MENA #1 -->
+    <div class="motion-item reveal">
+      <div class="motion-thumb">
+        <iframe
+          src="https://drive.google.com/file/d/1VO0x0wA7KJoG88A-OZ1ZOH4RcsVCoyh-/preview"
+          allow="autoplay"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="motion-overlay">
+        <span class="motion-client-badge">OKX MENA</span>
+        <a class="motion-play-btn" href="https://drive.google.com/file/d/1VO0x0wA7KJoG88A-OZ1ZOH4RcsVCoyh-/view" target="_blank">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M1 1l12 7-12 7V1z" fill="white"/>
+          </svg>
+        </a>
+        <div class="motion-info">
+          <div class="motion-work-title">OKX MENA</div>
+          <div class="motion-meta">Motion Graphics · Branded</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OKX MENA #2 -->
+    <div class="motion-item reveal">
+      <div class="motion-thumb">
+        <iframe
+          src="https://drive.google.com/file/d/1KUqtqRDxrNGuRS9lCb7BT7X-xj4-mLCg/preview"
+          allow="autoplay"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="motion-overlay">
+        <span class="motion-client-badge">OKX MENA</span>
+        <a class="motion-play-btn" href="https://drive.google.com/file/d/1KUqtqRDxrNGuRS9lCb7BT7X-xj4-mLCg/view" target="_blank">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M1 1l12 7-12 7V1z" fill="white"/>
+          </svg>
+        </a>
+        <div class="motion-info">
+          <div class="motion-work-title">OKX MENA</div>
+          <div class="motion-meta">Motion Graphics · Branded</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fun motion -->
+    <div class="motion-item full reveal">
+      <div class="motion-thumb">
+        <iframe
+          src="https://drive.google.com/file/d/1LWY3HJQvNOk2zS1sShmGYSW1G_vFWBFP/preview"
+          allow="autoplay"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="motion-overlay">
+        <a class="motion-play-btn" href="https://drive.google.com/file/d/1LWY3HJQvNOk2zS1sShmGYSW1G_vFWBFP/view" target="_blank">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M1 1l12 7-12 7V1z" fill="white"/>
+          </svg>
+        </a>
+        <div class="motion-info">
+          <div class="motion-work-title">Fun Motion</div>
+          <div class="motion-meta">After Effects · Personal</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- About -->
 <section id="about">
   <div class="about-left reveal">
@@ -740,7 +986,7 @@
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
   });
-  document.querySelectorAll('a, .work-item, button').forEach(el => {
+  document.querySelectorAll('a, .work-item, .motion-item, button').forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
   });
