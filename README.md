@@ -722,7 +722,7 @@
     <div class="work-item reveal">
       <div class="work-thumb">
         <iframe
-          src="https://drive.google.com/file/d/1jhg6nmFgoXue-vnKMaKwV_Jgns80uNUy/preview"
+          src="https://drive.google.com/drive/search?q=odoo"
           allow="autoplay"
           allowfullscreen>
         </iframe>
